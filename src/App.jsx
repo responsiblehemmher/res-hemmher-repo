@@ -1,12 +1,20 @@
-// src/App.js
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Repositories from './components/repositoriies/Repositories';
+import RepoDetails from './components/repodetails/RepoDetails';
+
+
 
 function App() {
   return (
-    <div className="container mx-auto px-4 py-8">
-      <Repositories />
-    </div>
+    <Router>
+      <div className="container mx-auto py-8">
+        <Routes>
+          <Route path="/" element={<Repositories />} />
+          <Route path="/repo/:repoName" element={<RepoDetails />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
