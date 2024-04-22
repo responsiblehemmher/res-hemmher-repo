@@ -1,0 +1,15 @@
+.repo-details-container {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .repo-details-container h2 {
+    color: #333;
+  }
+  
+  .repo-details-container p {
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
